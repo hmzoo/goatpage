@@ -2,9 +2,55 @@
 
 body {
 color:black;
-background-color:white;
-background-image:url(assets/img/bg.png);
-background-repeat:no-repeat;
-background-position:center top;
+background-color:#82b3f6;
+padding-top:20px;
 }
 
+.header {
+width:100%;
+height:60px;
+margin-bottom:40px;
+}
+
+.headerleft {
+float:left;
+margin-right:50px;
+margin-left:20px;
+}
+
+.headerright {
+float:left;
+padding:0px
+}
+
+.date{
+font-size:0.7em;
+margin:0px;
+height:20px;
+line-height : 20px;
+}
+
+.headerright h1{
+margin:0px;
+margin-top:10px;
+border-style:solid;
+border-width:0px;
+color:#555555}
+
+.content {
+clear:both
+}
+
+.container{
+background-color:#FFFFFF;
+-moz-border-radius: 9px;
+border-radius: 9px;
+border-style:solid;
+border-width:1.5px;
+border-color:#DDDDDD;
+padding:10px;
+}
+
+.contact{
+color:#82b3f6
+}
