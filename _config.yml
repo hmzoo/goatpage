@@ -1,3 +1,6 @@
 name: GoAtPage
 pygments: true
 exclude: [README.md]
+ftp_host: ftp.goatpage.com
+ftp_dir: /www
+ftp_passive: false
