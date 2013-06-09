@@ -1,0 +1,27 @@
+---
+layout: index
+title: Jekyll
+categories : [jekyll]
+---
+
+<div class="content">
+
+<div class='notes'>
+  <h2>Notes</h2>
+    {% capture cat_size %}{{ page.categories | size }}{% endcapture %}
+  {% for cat in page.categories %}
+
+  {% if page.categories.size > 1 %}
+	<h3>{{cat}}</h3>
+  {% endif %}
+  <ul class="posts">
+    {% for post in site.categories[cat] %}
+
+      <li><span>{{ post.date | localize: "%d %B, %Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>
+ <h1>{{page.title}}</h1>
+  Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through Markdown (or Textile) and Liquid converters, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project s page, blog, or website from GitHub s servers for free.
+</div>
