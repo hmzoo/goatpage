@@ -1,6 +1,21 @@
 ---
-layout: index
+layout: default
 title: GoAtPage
 categories: [jekyll]
 ---
 
+ <h2>Notes  {{page.title}}</h2>
+    {% capture cat_size %}{{ page.categories | size }}{% endcapture %}
+  {% for cat in page.categories %}
+
+  {% if page.categories.size > 0 %}
+	<a href="/{{cat}}" class="categorie">{{cat}}</a>
+  {% endif %}
+  
+  <ul>
+    {% for post in site.categories[cat] %}
+
+      <li><span>{{ post.date | localize: "%d %B, %Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}

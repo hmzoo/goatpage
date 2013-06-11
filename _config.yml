@@ -1,6 +1,6 @@
 name: GoAtPage
 pygments: true
-exclude: [README.md,sendftp.bat,sendgit.bat,psftp.scr]
+exclude: [README.md,sendftp.bat,run.bat,sendgit.bat,psftp.scr]
 ftp_host: ftp.goatpage.com
 ftp_dir: /www
 ftp_passive: false
